@@ -666,8 +666,8 @@ for (var i = 0, len = events.length; i < len; i++)
 		{
 			
 			 
-		        artEvt = artEvt+events[i][3]+'  '+events[i][1]+"  "+events[i][2]+'&';
-			artEvtDetails=artEvtDetails+events[i][5]+'  '+events[i][8]+'%';
+		   //     artEvt = artEvt+events[i][3]+'  '+events[i][1]+"  "+events[i][2]+'&';
+			//artEvtDetails=artEvtDetails+events[i][5]+'  '+events[i][8]+'%';
 				
 			hours=String(events[i][4]);
 		 	var timeString = hours;
@@ -676,8 +676,11 @@ for (var i = 0, len = events.length; i < len; i++)
 	 
 			var ampm = H < 12 ? "am" : "pm";
 			timeString = h + timeString.substr(2, 3);
-
-
+			calEvt = calEvt+events[i][3]+'  '+events[i][1]+"  "+events[i][2]+'&';
+			calEvtDetails=calEvtDetails+events[i][5]+'  '+events[i][8]+'%';
+//calEvt1=calEvt.split('&');
+	// calEvtDetails1=calEvtDetails.split('%');
+			
 			 var chkStr = hours.substring( hours.indexOf(':') + 1 ) ;
 
 				if(chkStr =='00')
@@ -1077,6 +1080,8 @@ var floater = 0;
 	
 	if ((events[i][2] == day) && (events[i][1] == month) && (events[i][3] == year)) {
 			
+			calEvt = calEvt+events[i][3]+'  '+events[i][1]+"  "+events[i][2]+'&';
+			calEvtDetails=calEvtDetails+events[i][5]+'  '+events[i][8]+'%';
 			hours=String(events[i][4]);
 		 	
 			 	
