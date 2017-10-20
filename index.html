@@ -1374,7 +1374,9 @@ document.getElementById("login").style.visibility="true";
 document.getElementById("login").style.display="block";
 document.getElementById("archive").style.visibility="false";
 document.getElementById("archive").style.display="none";
- $('#map').hide();	
+	document.getElementById("map").style.visibility="false";
+document.getElementById("map").style.display="none";
+ //$('#map').hide();	
 document.getElementById("det").style.display="none";
 document.getElementById("det").style.visibility="false";
 document.getElementById("lst_mnu").style.display="none";
@@ -1474,7 +1476,8 @@ function category()
 		document.getElementById("main").style.display="block";
 		document.getElementById("main").style.visibility="true";
 		
-		
+		document.getElementById("map").style.visibility="false";
+		document.getElementById("map").style.display="none";
 		
 		document.getElementById("backmenu").style.display="none";
 		document.getElementById("backmenu").style.visibility="false";
@@ -1827,7 +1830,7 @@ v1=v.replace(/ /g, "+");
 }
 		 getLoc();
 var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
-        +v1+"&zoom=19&size=400x300&sensor=false";
+        +v1+"&zoom=17&size=400x300&sensor=false";
         document.getElementById("map").innerHTML="<img src='"+img_url+"'>";	 
  }
 	  
@@ -1883,7 +1886,8 @@ document.getElementById("xPort").style.display="block";
 document.getElementById("xPort").style.visibility="true";
 	document.getElementById("xPort1").style.display="block";
 	document.getElementById("xPort1").style.visibility="true";
-	
+	document.getElementById("map").style.visibility="false";
+		document.getElementById("map").style.display="none";	
 document.getElementById("lst_mnu").style.display="none";
 document.getElementById("lst_mnu").style.visibility="false";
 document.getElementById("dl_btn").style.display="block";
@@ -2116,7 +2120,8 @@ document.getElementById("lst_mnu").style.display="none";
 document.getElementById("lst_mnu").style.visibility="false";
 document.getElementById("category").style.display="none";
 document.getElementById("category").style.visibility="false";
- 	
+ 	document.getElementById("map").style.visibility="false";
+		document.getElementById("map").style.display="none";	
   $('#map').hide();
 		//alert('in');
 prevyr='';	
