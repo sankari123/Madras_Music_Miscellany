@@ -549,6 +549,7 @@ $(document).ready(function(){
 		$("#artist").click(function(){
 	//	  $('#arSrch').show();	 
 		$("#arSrch").html("");
+			$('#input1').val('');
 		  $('#main').hide();
 		  $('#mainMenu').hide();
 		  $('#category').hide();
@@ -719,10 +720,10 @@ for (var i = 0, len = events.length; i < len; i++)
 			
 //events.push(["",String(eMon),String(eDat),String(eYr),pTim,venue,pnam,Pdeta,art,pLatLong]);			
 	 
-	art_lst+="<tr align='center' ><td><b>" +n+", " +events[i][2]+" "+mNam+" "+' '+jj+"</b>+<br>";
+	art_lst+="<tr align='center' ><td><b>" +n+", " +events[i][2]+" "+mNam+" "+' '+jj+"</b><br>";
 			
 			
-	art_lst+=events[i][5]+'<br>'+'<br>';
+	art_lst+=events[i][5]+'<br><br>';
 	 
 	art_lst+=events[i][7]+'<hr size=2></td></tr>';
 		 
@@ -1389,6 +1390,7 @@ function backSt()
 		
 		 $('#category').show();
 		 $('#main').show();
+		$('#input1').val('');
 		 $('#mainMenu').show();
 		 $('#searchmenu').hide();
 		 $('#login').hide();
