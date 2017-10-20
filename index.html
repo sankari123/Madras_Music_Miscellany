@@ -1290,8 +1290,9 @@ function procVal(pVar)
 		//document.getElementById("lst_mnu").style.display="block";
 		//document.getElementById("lst_mnu").style.visibility="true";
 		 
-		  $('#map').hide();
-		
+		//  $('#map').hide();
+		document.getElementById("map").style.display="none";
+		document.getElementById("map").style.visibility="false";
 		document.getElementById("calendar").style.display="none";
 		document.getElementById("calendar").style.visibility="false";
 		document.getElementById("category").style.display="none";
@@ -1363,16 +1364,16 @@ function login()
  
 	//alert('in loop');
 	
-	document.getElementById("map").style.display="none";
-	document.getElementById("map").style.visibility="false";
-	document.getElementById("backmenu").style.display="block";
-	document.getElementById("backmenu").style.visibility="true";
+document.getElementById("map").style.display="none";
+document.getElementById("map").style.visibility="false";
+document.getElementById("backmenu").style.display="block";
+document.getElementById("backmenu").style.visibility="true";
 
- //$('#map').hide();	
-	document.getElementById("main").style.visibility="false";
-	document.getElementById("main").style.display="none";
-	document.getElementById("mainMenu").style.visibility="false";
-	document.getElementById("mainMenu").style.display="none";
+        //$('#map').hide();	
+document.getElementById("main").style.visibility="false";
+document.getElementById("main").style.display="none";
+document.getElementById("mainMenu").style.visibility="false";
+document.getElementById("mainMenu").style.display="none";
 document.getElementById("calendar").style.display="none";
 document.getElementById("calendar").style.visibility="false"; 
 document.getElementById("login").style.visibility="true";
@@ -1467,8 +1468,12 @@ function category()
  
 		$('#category').show('slide', 400);
 		$('#xPort').hide();
-	  $('#map').hide();
-		document.getElementById("xPort").style.visibility="false";
+	//  $('#map').hide();
+	        document.getElementById("map").style.display="none";
+		document.getElementById("map").style.visibility="false";
+	
+              //  document.getElementById("xPort").style.display="none";
+		//document.getElementById("xPort").style.visibility="false";
 		//document.getElementById("category").style.display="block";
 		//document.getElementById("category").style.visibility="true";
 		document.getElementById("login").style.display="none";
@@ -1494,9 +1499,10 @@ function category()
 		document.getElementById("lst_mnu").style.display="none";
 		document.getElementById("lst_mnu").style.visibility="false";
 		
-		document.getElementById("xPort1").style.display="none";
+		
 		document.getElementById("archive").style.visibility="false";
 		document.getElementById("archive").style.display="none";
+		document.getElementById("xPort1").style.display="none";
 		document.getElementById("xPort1").style.visibility="false";
 		document.getElementById("rnd").style.display="none";
 		document.getElementById("rnd").style.visibility="false";
@@ -1694,6 +1700,8 @@ function calClick()
 		//	  $('#calendar').toggle('slide','right',500);	 
 		//document.getElementById("calendar").style.display="block";
 		//document.getElementById("calendar").style.visibility="true";
+		document.getElementById("map").style.display="none";
+		document.getElementById("map").style.visibility="false";
 		document.getElementById("category").style.display="none";
 		document.getElementById("category").style.visibility="false";
 		document.getElementById("login").style.display="none";
@@ -1702,8 +1710,7 @@ function calClick()
 		document.getElementById("xPort").style.visibility="false";
 		document.getElementById("xPort1").style.display="none";
 		document.getElementById("xPort1").style.visibility="false";
-		document.getElementById("map").style.display="none";
-		document.getElementById("map").style.visibility="false";
+		
 		document.getElementById("lst_mnu").style.display="none";
 		document.getElementById("lst_mnu").style.visibility="false";
 		document.getElementById("dl_btn").style.display="none";
