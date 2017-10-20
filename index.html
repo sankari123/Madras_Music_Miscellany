@@ -74,7 +74,10 @@
 	    display: none; 
 	    }
 
-	   
+	 .map
+	    {
+	    display: none; 
+	    }   
 
 
 	.nav ul {
@@ -561,6 +564,7 @@ $(document).ready(function(){
 			 $('#xPort').hide();
 			  $('#xPort1').hide();
 			   $('#tab').hide();
+			 $('#map').hide();
 		//	hide('main');
 		//	hide('backmenu');
 		//	hide('category');
@@ -1286,7 +1290,7 @@ function procVal(pVar)
 		//document.getElementById("lst_mnu").style.display="block";
 		//document.getElementById("lst_mnu").style.visibility="true";
 		 
-		 
+		  $('#map').hide();
 		
 		document.getElementById("calendar").style.display="none";
 		document.getElementById("calendar").style.visibility="false";
@@ -1370,7 +1374,7 @@ document.getElementById("login").style.visibility="true";
 document.getElementById("login").style.display="block";
 document.getElementById("archive").style.visibility="false";
 document.getElementById("archive").style.display="none";
-	
+ $('#map').hide();	
 document.getElementById("det").style.display="none";
 document.getElementById("det").style.visibility="false";
 document.getElementById("lst_mnu").style.display="none";
@@ -1403,6 +1407,7 @@ function backSt()
 		 $('#xPort').hide();
 		$('#dl_btn').hide();
 		$('#archive').hide();
+		 $('#map').hide();
 		//document.getElementById("login").style.visibility="false";
 		//document.getElementById("login").style.display="none";
 		//document.getElementById("category").style.display="block";
@@ -1457,7 +1462,7 @@ function category()
  
 		$('#category').show('slide', 400);
 		$('#xPort').hide();
-	 
+	  $('#map').hide();
 		document.getElementById("xPort").style.visibility="false";
 		//document.getElementById("category").style.display="block";
 		//document.getElementById("category").style.visibility="true";
@@ -1691,6 +1696,8 @@ function calClick()
 		document.getElementById("xPort").style.visibility="false";
 		document.getElementById("xPort1").style.display="none";
 		document.getElementById("xPort1").style.visibility="false";
+		document.getElementById("map").style.display="none";
+		document.getElementById("map").style.visibility="false";
 		document.getElementById("lst_mnu").style.display="none";
 		document.getElementById("lst_mnu").style.visibility="false";
 		document.getElementById("dl_btn").style.display="none";
@@ -1721,7 +1728,8 @@ function ven_det(v)
 	active_page=2;
 	document.getElementById("xPort").style.display="block";
 	document.getElementById("xPort").style.visibility="true";
-	
+	document.getElementById("map").style.display="block";
+	document.getElementById("map").style.visibility="true";
 	document.getElementById("xPort1").style.display="block";
 	document.getElementById("xPort1").style.visibility="true";
 	
@@ -1811,10 +1819,33 @@ ev_lst+="<div id='wrapper' style='background:#f1f1f1'><div id='left' style='back
 	calEvtDetails = calEvtDetails.replace('undefined','');
  document.getElementById('xPort').innerHTML=ev_lst ;
 	
+v1=v.replace(/ /g, "+");
+	// alert(v1);
 
- }
-//alert('venue '+v);
+	 
+
 }
+		 getLoc();
+var img_url="http://maps.googleapis.com/maps/api/staticmap?center="
+        +v1+"&zoom=19&size=400x300&sensor=false";
+        document.getElementById("map").innerHTML="<img src='"+img_url+"'>";	 
+ }
+	  
+function getLoc() 
+{
+	
+    // nothing
+ 
+	if (navigator.geolocation)
+          {
+            //navigator.geolocation.getCurrentPosition(myMap);
+          }
+        else
+          {
+                document.getElementById("map").innerHTML="Network error. Connect to internet...";
+          }
+
+} 
 	  
 	
 	
@@ -2086,7 +2117,7 @@ document.getElementById("lst_mnu").style.visibility="false";
 document.getElementById("category").style.display="none";
 document.getElementById("category").style.visibility="false";
  	
- 
+  $('#map').hide();
 		//alert('in');
 prevyr='';	
 		
@@ -2305,7 +2336,7 @@ LaunchReview.launch(appId, function(){
 		 
 		
 	</div>
-
+<div id='map' width='300px' height='200px'>  </div>
 	<div class="dl_btn" id='dl_btn' align='center'>
     
  <div style="float: left; font-size: 9pt; width: 33%;"> <button class='btn1'  onclick='calAdd();'><img src="cal1.png"></button>
