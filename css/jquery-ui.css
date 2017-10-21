@@ -34,7 +34,7 @@
 	 color: gray;
 }
 .ui-menu .ui-menu-item {
-	position: relative;
+	/*position: relative;*/
 	margin: 0;
 	position: absolute;
 	/*padding: 3px 1em 53px .4em;*/
