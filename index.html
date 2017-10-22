@@ -642,8 +642,8 @@ function monkeyPatchAutocomplete() {
 
           $.ui.autocomplete.prototype._renderItem = function( ul, item) {
               var re = new RegExp("^" + this.term, "i") ;
-           //   var t = item.label.replace(re,"<br><span id='arSrch' style='height:100%;color:black;text-align: left;'>" + this.term + "</span>");
-		     var t = item.label.replace(re,"<span style='color:black;vertical-align:middle;'>" + this.term + "</span>");
+           var t = item.label.replace(re,"<br><span id='arSrch' style='height:100%;color:black;text-align: left;'>" + this.term + "</span>");
+	//	     var t = item.label.replace(re,"<span style='color:black;vertical-align:middle;'>" + this.term + "</span>");
               return $( "<li></li>" )
                   .data( "item.autocomplete", item )
 	//	   .append( "<a class='test'><img src='search1.png' style='padding-top :0px; vertical-align: middle;'>" + t + "</a>" )
