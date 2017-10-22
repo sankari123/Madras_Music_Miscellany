@@ -558,6 +558,7 @@ $("#input1").keypress(function(){
 $(document).ready(function(){
 		$("#artist").click(function(){
 	//	  $('#arSrch').show();	 
+			$('#input1').focus();
 		$("#arSrch").html("");
 			$('#input1').val('');
 		  $('#main').hide();
@@ -648,7 +649,7 @@ function monkeyPatchAutocomplete() {
                   .data( "item.autocomplete", item )
 	//	   .append( "<a class='test'><img src='search1.png' style='padding-top :0px; vertical-align: middle;'>" + t + "</a>" )
             //      .append( "<a>" + t + "</a>" )
-		 .append( "<a><img src='search1.png' style=' display: inline-block;  padding-top :0px; vertical-align: middle;'>" + t + "</a>" )
+		 .append( "<a><img src='search1.png' style=' display: inline-block;  padding-top :0px; vertical-align: bottom;'>" + t + "</a>" )
                   .appendTo( ul );
           };
       }
