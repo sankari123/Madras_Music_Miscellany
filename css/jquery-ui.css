@@ -35,6 +35,8 @@
 .ui-menu .ui-menu-item {
 	position: relative;
 	margin: 0;
+	padding-top: 3px;
+	padding-bottom: 3px;
 	/* padding: 3px 1em 53px .4em; */
 	cursor: pointer;
 	min-height: 0; /* support: IE7 */
