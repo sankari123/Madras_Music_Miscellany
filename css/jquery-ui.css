@@ -25,10 +25,9 @@
 	padding: 0;
 	margin: 0;
 	display: block;
-	 
+	 outline: none;
 	 color: gray;
-	  border: 1px solid black;
-    outline-color: red;
+	 
 }
 .ui-menu .ui-menu {
 	position: absolute;
