@@ -660,9 +660,12 @@ function monkeyPatchAutocomplete() {
 		
 function displayResults(artistNam)
 {
-$('#input1').val('');
 $("#input1").blur();
-$("#arSrch").hide();
+	$("#arSrch").hide();
+$('#category').hide();	
+$('#input1').val('');
+
+
 $("#map").hide();
 $('#xPort').show();	
 //$('#xPort1').show();	
