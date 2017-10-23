@@ -556,15 +556,16 @@ $("#input1").keypress(function(){
 		
 $(document).ready(function(){
 		$("#artist").click(function(){
-	//	  $('#arSrch').show();	
-			 $('#map').hide();
+	//	 $('#arSrch').show();	
+		 $('#map').hide();
+	  $('#category').hide();
 		$('#input1').focus();
 		$('#input1').val('');
 		  $('#main').hide();
 		
 		 $('#archive').hide();
 		  $('#mainMenu').hide();
-		  $('#category').hide();
+		
 		 $('#calendar').hide();
 		  $('#dl_btn').hide();
 		  $('#lst_mnu').hide();
@@ -667,15 +668,15 @@ $('#input1').val('');
 
 
 $("#map").hide();
-$('#xPort').show();	
+	
 //$('#xPort1').show();	
 $('#dl_btn').show();		
  
 document.getElementById('xPort').innerHTML='' ;
-	
+	$('#xPort').show();
 var calEvt ='';
-	var calEvtEvtDetails='';
- alert(artistNam);
+	var calEvtDetails='';
+ //alert(artistNam);
 	var art_lst='';
 var art_lst="<table border='0' id='test' class='ven1' cellpadding='0' cellspacing='0'>";
 art_lst+="<tr height='40px' bgcolor='white'><td colspan=3 align='center'><b><font color=red>"+  artistNam +"</font></b></td></tr>";
