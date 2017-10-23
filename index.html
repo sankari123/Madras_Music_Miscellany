@@ -662,6 +662,8 @@ function monkeyPatchAutocomplete() {
 		
 function displayResults(artistNam)
 {
+$("#map").hide();
+$("#calendar").hide();
 $("#input1").blur();
 $("#arSrch").hide();
 $('#login').hide();
@@ -669,7 +671,7 @@ $('#category').hide();
 $('#input1').val('');
 
 
-$("#map").hide();
+
 	
 //$('#xPort1').show();	
 $('#dl_btn').show();		
@@ -2350,14 +2352,14 @@ LaunchReview.launch(appId, function(){
 	<!--<div id="previewImage">
     </div>-->
     <div id='archive'></div>  
-	<div id='calEvent'>
+	<!--<div id='calEvent'>
 			 
 		<div id='left1' class="left1"></div>
 		<div id='right1' class="right1"></div>
 		<div id='common1' class="common1"></div>
    
 				
-	</div>
+	</div>-->
 
 	<div id='login' align='center' class='login'>
 		
@@ -2375,7 +2377,7 @@ LaunchReview.launch(appId, function(){
 		 
 		
 	</div>
-<div id='map' width='300px' height='200px'>  </div>
+  </div>
 	<div class="dl_btn" id='dl_btn' align='center'>
     
  <div style="float: left; font-size: 9pt; width: 33%;"> <button class='btn1'  onclick='calAdd();'><img src="cal1.png"></button>
@@ -2388,7 +2390,7 @@ LaunchReview.launch(appId, function(){
 </div>
  
 	<div id='xPort' >     </div>
-
+<div id='map' width='300px' height='200px'>
 		<div id='dl_btn1'></div>
 	
 		 
