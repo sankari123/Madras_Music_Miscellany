@@ -663,22 +663,16 @@ function monkeyPatchAutocomplete() {
 function displayResults(artistNam)
 {
 $("#map").hide();
-$("#calendar").hide();
 $("#input1").blur();
-$("#lst_mnu").hide();
 $("#arSrch").hide();
-$('#login').hide();
-$('#category').hide();	
+$('#xPort').show();	
+//$('#xPort1').show();	
+$('#dl_btn').show();	
+
 $('#input1').val('');
 
-
-
-	
-//$('#xPort1').show();	
-$('#dl_btn').show();		
- 
-//document.getElementById('xPort').innerHTML='' ;
-	$('#xPort').show();
+document.getElementById('xPort').innerHTML='' ;
+	 
 var calEvt ='';
 	var calEvtDetails='';
  //alert(artistNam);
