@@ -557,6 +557,7 @@ $("#input1").keypress(function(){
 $(document).ready(function(){
 		$("#artist").click(function(){
 	//	 $('#arSrch').show();	
+			$('#backmenu').show();	
 		 $('#map').hide();
 	  $('#category').hide();
 		$('#input1').focus();
@@ -569,7 +570,7 @@ $(document).ready(function(){
 		 $('#calendar').hide();
 		  $('#dl_btn').hide();
 		  $('#lst_mnu').hide();
-			$('#backmenu').show();	
+			
 			$('#dl_btn1').hide();
 			 $('#xPort').hide();
 			  $('#xPort1').hide();
@@ -662,7 +663,8 @@ function monkeyPatchAutocomplete() {
 function displayResults(artistNam)
 {
 $("#input1").blur();
-	$("#arSrch").hide();
+$("#arSrch").hide();
+$('#login').hide();
 $('#category').hide();	
 $('#input1').val('');
 
@@ -672,7 +674,7 @@ $("#map").hide();
 //$('#xPort1').show();	
 $('#dl_btn').show();		
  
-document.getElementById('xPort').innerHTML='' ;
+//document.getElementById('xPort').innerHTML='' ;
 	$('#xPort').show();
 var calEvt ='';
 	var calEvtDetails='';
